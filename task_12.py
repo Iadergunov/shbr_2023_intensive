@@ -4,6 +4,9 @@
 
 
 def merge_sort(arr: list) -> list:
+    if len(arr) == 0:
+        return arr
+
     def sort_step(sub_arr):
         if len(sub_arr) == 1:
             return sub_arr
@@ -36,3 +39,5 @@ def merge_sort(arr: list) -> list:
 
 assert merge_sort([5, 1, 4, 2, 8]) == [1, 2, 4, 5, 8]
 assert merge_sort([5, 4, 3, 2, 1]) == [1, 2, 3, 4, 5]
+assert merge_sort([1]) == [1]
+assert merge_sort([]) == []
