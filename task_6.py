@@ -20,3 +20,4 @@ def check_brackets(line: str) -> bool:
 assert check_brackets("()((()))()") is True
 assert check_brackets("()(((()))()") is False
 assert check_brackets("()(") is False
+assert check_brackets("") is True
